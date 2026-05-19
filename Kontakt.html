@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="Kontakt.js" defer></script>
+    <title>Söderins Kontakt</title>
 </head>
 <body>
     <header>
@@ -17,9 +18,10 @@
         </nav>
         <hr>
     </header>
+    <div class ="form-wrapper">
     <form id ="contactForm">
 <label for="name">Ditt namn</label>
-<input type="text" placeholder="Ditt namn">
+<input type="text" id="name" placeholder="Ditt namn">
 
 <label for="message">Vad behöver du hjälp med?</label>
 <textarea id="message"></textarea>
@@ -28,6 +30,8 @@
     </form>
     
     <p id="success"></p>
+
+    </div>
 
 <footer>
      <hr>

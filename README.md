@@ -1,1 +1,2 @@
 # S-derinswebbsida
+En webbsida för Söderins där man kan hitta Söderins telefonnummer, en sida för att skicka ett meddelande och en för att göra en egen burgare, en sida om historian av Söderins, och en sida för menyn av Söderins.
