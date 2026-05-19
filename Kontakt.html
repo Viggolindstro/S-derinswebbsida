@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>🍔Söderins Gatukök🍔</h1>
+        <hr>
+        <nav>
+            <a href="Kontakt.html">Kontakt</a>
+            <a href="Meny.html">Meny</a>
+            <a href="Burgare.html">Bygg din egen burgare</a>
+        </nav>
+        <hr>
+    </header>
     <form id ="contactForm">
 <label for="name">Ditt namn</label>
-<input type="text" placeholder="Ditt namn"
+<input type="text" placeholder="Ditt namn">
 
 <label for="message">Vad behöver du hjälp med?</label>
+<textarea id="message"></textarea>
+
+<button type="submit">Skicka</button>
     </form>
     
+    <p id="success"></p>
+
+<footer>
+     <hr>
+     <p>📞Telefonnummer: 0690-101 50</p>
+</footer>
+    
+
 </body>
 </html>
