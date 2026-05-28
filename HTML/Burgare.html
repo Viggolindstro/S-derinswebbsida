@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Söderins Bygg din egen burgare</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/Burgare.css">
     <script src="/JAVASCRIPT/darkmode.js" defer></script>
+    <script src="/JAVASCRIPT/Burgare.js" defer></script>
 </head>
 <body>
      <header>
@@ -18,19 +19,34 @@
             <a href="/HTML/Historia.html">Historia</a>
         </nav>
         <hr>
-        <button id="theme-toggle">
+        <button id="theme-toggle" class ="tomato">
             <p>🍅</p>
         </button>
     </header>
-    <p>Hamburgarbiff</p>
-    <button class "plus">
-        <p>+</p>
-        </button>
-        <p>Ost</p>
-        <button>
-        <p>+</p>
-        </button>
-    </button>
+   <p>Hamburgarbiff: 15kr</p>
+<button class="plus" data-price="15">+</button>
+
+<p>Ost: 5kr</p>
+<button class="plus" data-price="5">+</button>
+<button class="minus" data-price="5">-</button>
+
+<p>Tomat: 5kr</p>
+<button class="plus" data-price="5">+</button>
+<button class="minus" data-price="5">-</button>
+
+<p>Halloumi: 10kr</p>
+<button class="plus" data-price="10">+</button>
+<button class="minus" data-price="5">-</button>
+
+<p>Ägg: 10kr</p>
+<button class="plus" data-price="10">+</button>
+<button class="minus" data-price="5">-</button>
+
+<p>Bacon: 10kr</p>
+<button class="plus" data-price="10">+</button>
+<button class="minus" data-price="5">-</button>
+
+<h2>Total: <span id="total">0</span> kr</h2>
     <footer>
      <p>📞Telefonnummer: 0690-101 50</p>
 </footer>
