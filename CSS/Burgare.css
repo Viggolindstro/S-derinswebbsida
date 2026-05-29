@@ -50,8 +50,8 @@ hr {
     border: 0;
 }
 p {
-    padding: 1rem;
-    font-size: 4rem;
+    padding: 0.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: rgb(226, 26, 26);
     text-align: center;
@@ -130,7 +130,7 @@ h2 {
     background: rgb(255, 230, 88);
     color: rgb(226, 26, 26);
 
-    border: none;
+    border: 4px solid rgb(226, 26, 26);
     border-radius: 12px;
 
     width: 80px;
@@ -153,4 +153,13 @@ h2 {
 
 .minus:active {
     transform: scale(0.95);
+}
+img {
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 20px;
 }
