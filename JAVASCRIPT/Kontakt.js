@@ -10,12 +10,13 @@ form.addEventListener("submit", function(event) {
     const name = nameInput.value;
     const message = messageInput.value;
 
+    //Kollar så att alla fält är ifyllda, så att det inte skickas in tomma meddelanden.
 if (name === "" || message === "") {
         successP.textContent = "Vänligen fyll i alla fält.";
         successP.style.color = "red";  
         return;
     }
-
+    
     console.log(name, message);
     successP.textContent = "Tack för ditt meddelande!";
     successP.style.color = "green";

@@ -4,14 +4,14 @@
 }
 body {
     background-color: rgb(253, 221, 81);
-    color: rgb(226, 26, 26);
-    border: 10px solid rgb(226, 26, 26);
+    color: rgb(199, 3, 3);
+    border: 10px solid rgb(199, 3, 3);
     height: 100%;
 
 }
 h1 {
-    color: rgb(226, 26, 26);
-    font-size: 6rem;
+    color: rgb(199, 3, 3);
+    font-size: 4.5rem;
     text-align: center;
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
@@ -34,7 +34,7 @@ footer {
     font-size: 1rem;
 }
 header {
- color: rgb(226, 26, 26);
+    color: rgb(199, 3, 3);
 }
 nav {
     padding: 1rem;
@@ -44,19 +44,19 @@ nav {
 }
 hr {
     height: 0.5rem;
-    color: rgb(226, 26, 26);
-    background:rgb(226, 26, 26);
+    color: rgb(199, 3, 3);
+    background:rgb(199, 3, 3);
     font-size: 0;
     border: 0;
 }
 p {
     padding: 1rem;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 a {
-    font-size: 2.5rem;
-    color: rgb(226, 26, 26);
+    font-size: 2rem;
+    color: rgb(199, 3, 3);
     font-weight: bold;
     padding: 2rem;
     text-align: center;
@@ -68,9 +68,9 @@ flex-direction: column;
 textarea {
     font-size: 1.5rem;
     background-color: rgb(255, 230, 88);
-    color: rgb(226, 26, 26);
+    color: rgb(199, 3, 3);
     border-radius: 1rem;
-    border: 4px solid rgb(226, 26, 26);
+    border: 4px solid rgb(199, 3, 3);
     width: 40%;
     margin: 0 auto;
     gap: 1rem;
@@ -78,16 +78,16 @@ textarea {
 input {
     width: 30%;
     background-color: rgb(255, 230, 88);
-    color: rgb(226, 26, 26);
+    color: rgb(199, 3, 3);
     margin: 0 auto;
     border-radius: 1rem;
-    border: 4px solid rgb(226, 26, 26);
+    border: 4px solid rgb(199, 3, 3);
     font-size: 1.5rem;
 }
 .Yohoho {
 
     color:rgb(255, 230, 88);
-    background-color: rgb(226, 26, 26);
+    background-color: rgb(199, 3, 3);
     width: 40%;
     height: 10%;
     text-align: center;
@@ -95,7 +95,7 @@ input {
     margin: 0 auto;
     border-radius: 1rem;
     padding: 2rem;
-    border: 4px solid rgb(226, 26, 26);
+    border: 4px solid rgb(199, 3, 3);
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 1rem;
@@ -114,7 +114,7 @@ background:none;
  top: 0;
 }
 .dark {
-  background-color: rgb(202, 50, 50);
+  background-color: rgb(128, 19, 19);
   color: rgb(255, 230, 88);
   border: 10px solid rgb(209, 189, 74);
   hr {

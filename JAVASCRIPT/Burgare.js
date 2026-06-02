@@ -1,10 +1,12 @@
 let total = 0;
+// Sätter total till 0 från början för att undvika att gammalt värde finns kvar.
 const plusButtons = document.querySelectorAll(".plus");
 const minusButtons = document.querySelectorAll(".minus");
 const totalText = document.querySelector("#total");
 
 function updateTotal(amount) {
     total += amount;
+    //Gör så att värdet aldrig kan gå under 0, så att det inte blir negativt.
     if(total < 0) {
         total = 0;
     }
@@ -12,6 +14,7 @@ function updateTotal(amount) {
 }
 
 document.querySelectorAll(".plus, .minus").forEach(button => {
+    //Kollar vilken knapp som klickats på, och uppdaterar totalen baserat på det.
     button.addEventListener("click", () => {
         const price = Number(button.dataset.price);
         const isPlus = button.classList.contains("plus");

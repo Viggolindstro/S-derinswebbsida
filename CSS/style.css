@@ -4,14 +4,14 @@
 }
 body {
     background-color: rgb(253, 221, 81);
-    color: rgb(226, 26, 26);
-    border: 10px solid rgb(226, 26, 26);
+    color: rgb(199, 3, 3);
+    border: 10px solid rgb(199, 3, 3);
     height: 100%;
 
 }
 h1 {
-    color: rgb(226, 26, 26);
-    font-size: 6rem;
+    color: rgb(199, 3, 3);
+    font-size: 4.5rem;
     text-align: center;
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
@@ -19,8 +19,8 @@ h1 {
 }
 li {
     text-align: center;
-    padding: 4rem;
-    font-size: 4rem;
+    padding: 3rem;
+    font-size: 2rem;
     font-family:Arial, Helvetica, sans-serif;
 }
 footer {
@@ -43,8 +43,8 @@ nav {
 }
 hr {
     height: 0.5rem;
-    color: rgb(226, 26, 26);
-    background:rgb(226, 26, 26);
+    color: rgb(199, 3, 3);
+    background:rgb(199, 3, 3);
     font-size: 0;
     border: 0;
 }
@@ -54,8 +54,8 @@ p {
     font-weight: bold;
 }
 a {
-    font-size: 2.5rem;
-    color: rgb(226, 26, 26);
+    font-size: 2rem;
+    color: rgb(199, 3, 3);
     font-weight: bold;
     padding: 2rem;
     text-align: center;
@@ -68,8 +68,18 @@ button {
  left: 0;
  top: 0;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 10px;
+}
 .dark {
-  background-color: rgb(145, 20, 20);
+  background-color: rgb(128, 19, 19);
   color: rgb(235, 212, 86);
   border: 10px solid rgb(209, 189, 74);
   hr {
@@ -100,4 +110,20 @@ h3 {
   padding: 1rem;
   font-size: 3rem;
   font-weight: bold;
+}
+h5 {
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+h6 {
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1rem;
 }
