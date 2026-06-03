@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Söderins Bygg din egen burgare</title>
+    <title>Bygg en Burgare | Söderins Gatukök</title>
+    <meta name="description" content="Söderins Gatukök - Best burgers in town.">
+    <meta name="keywords" content="burger, restaurant, food, gatukök">
+    <meta name="author" content="Viggo Lindstrom">
+
     <link rel="stylesheet" href="/CSS/Burgare.css">
     <script src="/JAVASCRIPT/darkmode.js" defer></script>
     <script src="/JAVASCRIPT/Burgare.js" defer></script>
@@ -19,49 +23,65 @@
             <a href="/HTML/Historia.html">Historia</a>
         </nav>
         <hr>
-        <button id="theme-toggle" class ="tomato">
-            <p>🍅</p>
+        <button id="theme-toggle" aria-label="Växla mörkt läge">
+           <span class="icon">🍅</span>
         </button>
     </header>
    <p>Hamburgarbiff: 15kr</p>
    <img src="/IMG/Hamburgarbiff.jpg"alt="Hamburgarbiff" class="hamburgare">
+   <div class="button-row">
 <button class="plus" data-price="15">+</button>
 <button class="minus" data-price="15">-</button>
+</div>
 
 <p>Ost: 10kr</p>
 <img src="/IMG/Ost.png" alt="Ost" class="ost">
+<div class="button-row">
 <button class="plus" data-price="10">+</button>
 <button class="minus" data-price="10">-</button>
+</div>
 
 <p>Tomat: 5kr</p>
 <img src="/IMG/Tomat.jpg" alt="Tomat" class="tomat">
+<div class="button-row">
 <button class="plus" data-price="5">+</button>
 <button class="minus" data-price="5">-</button>
+</div>
 
 <p>Halloumi: 10kr</p>
 <img src="/IMG/Halloumi.png" alt="Halloumi" class="halloumi">
+<div class="button-row">
 <button class="plus" data-price="10">+</button>
 <button class="minus" data-price="10">-</button>
+</div>
 
 <p>Ägg: 10kr</p>
 <img src="/IMG/perfect-fried-eggs.jpg" alt="Ägg" class="ägg">
+<div class="button-row">
 <button class="plus" data-price="10">+</button>
 <button class="minus" data-price="10">-</button>
+</div>
 
 <p>Bacon: 15kr</p>
 <img src="/IMG/Bacon.jpg" alt="Bacon" class="bacon">
+<div class="button-row">
 <button class="plus" data-price="15">+</button>
 <button class="minus" data-price="15">-</button>
+</div>
 
 <p>Toppbröd: 10kr</p>
 <img src="/IMG/Buns.jpg" alt="Toppbröd" class="toppbröd">
+<div class="button-row">
 <button class="plus" data-price="10">+</button>
 <button class="minus" data-price="10">-</button>
+</div>
 
 <p>Bottenbröd: 10kr</p>
 <img src="/IMG/Buns.jpg" alt="Bottenbröd" class="bottenbröd">
+<div class="button-row">
 <button class="plus" data-price="10">+</button>
 <button class="minus" data-price="10">-</button>
+</div>
 
 <h2>Total: <span id="total">0</span> kr</h2>
 <div>
