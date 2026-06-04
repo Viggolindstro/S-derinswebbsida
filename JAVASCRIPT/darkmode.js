@@ -27,14 +27,14 @@ function loadTheme() {
 }
 
 loadTheme();
-const ONE_MINUTE = 1000 * 60 * 1
+const TEN_SECONDS = 1000 * 10 // 10 sekunder i millisekunder
 
 const lastVisit = localStorage.getItem("lastVisit");
 if (lastVisit) {
   const now = Date.now();
   const timePassed = now - lastVisit;
 
-  if (timePassed > ONE_MINUTE) {
+  if (timePassed > TEN_SECONDS) {
     localStorage.removeItem("theme");
     localStorage.removeItem("lastVisit");
   }
