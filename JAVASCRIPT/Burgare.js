@@ -11,6 +11,7 @@ function updateTotal(amount) {
         total = 0;
     }
     totalText.textContent = total;
+    updateOrderButton();
 }
 
 document.querySelectorAll(".plus, .minus").forEach(button => {
@@ -22,3 +23,23 @@ document.querySelectorAll(".plus, .minus").forEach(button => {
         updateTotal(isPlus ? price : -price);
     });
 });
+const orderButton = document.querySelector(".orderbutton");
+const orderMessage = document.querySelector("#order-message");
+
+
+orderButton.addEventListener("click", () => {
+    if (total === 0) {
+        return;
+    }
+    orderMessage.textContent = "Din beställning är på väg!";
+
+    setTimeout(() => {
+        orderMessage.textContent = "";
+    }, 3000);
+});
+
+// Tar bort knappen ifall du inte lagt in några ingredienser
+function updateOrderButton() {
+    orderButton.disabled = total === 0;
+}
+updateOrderButton();
