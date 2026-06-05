@@ -136,26 +136,19 @@ label {
   }
 
 #theme-toggle {
-    position: fixed;
+     position: fixed;
     top: 1rem;
     left: 1rem;
-
     width: 60px;
     height: 60px;
 
-    font-size: 2rem;
-
-    border: none;
-    border-radius: 12px;
-
-    background: rgb(226, 26, 26);
-    cursor: pointer;
-
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    z-index: 1000;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(226, 26, 26);
 
     transition: transform 0.4s ease;
 }
@@ -163,6 +156,7 @@ label {
 #theme-toggle:hover {
 transform: scale(1.1);
 }
+
 .form-wrapper {
     width: min(90%, 700px);
     margin: 4rem auto;
@@ -171,6 +165,7 @@ transform: scale(1.1);
     border-radius: 20px;
     padding: 3rem;
 }
+
 h2 {
     font-size: 3rem;
     font-family:Arial, Helvetica, sans-serif;
@@ -178,6 +173,23 @@ h2 {
     text-align: center;
     padding: 1rem;
 }
+
+input:focus,
+textarea:focus {
+    outline: 3px solid rgb(226, 26, 26);
+    outline-offset: 2px;
+}
+
+button {
+ cursor: pointer;
+}
+
+.icon {
+    font-size: 2rem;
+    line-height: 1;
+    pointer-events: none;
+}
+
 @media (max-width: 768px) {
 
     h1 {
@@ -217,9 +229,4 @@ h2 {
         height: 50px;
         font-size: 1.5rem;
     }
-}
-input:focus,
-textarea:focus {
-    outline: 3px solid rgb(226, 26, 26);
-    outline-offset: 2px;
 }

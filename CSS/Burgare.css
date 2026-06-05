@@ -87,6 +87,7 @@ color: rgb(255, 230, 88);
   border-radius: 10px;
   border: none;
   background-color: rgb(226, 26, 26);
+  transition: transform 0.4s ease;
 }
 
 #theme-toggle:hover {
@@ -202,6 +203,9 @@ main > div {
 .orderbutton:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+button {
+ cursor: pointer;
 }
 
 @media (max-width: 768px) {
