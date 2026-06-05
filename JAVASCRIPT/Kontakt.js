@@ -16,7 +16,11 @@ if (name === "" || message === "") {
         successP.style.color = "red";  
         return;
     }
-    
+       if (!isValidEmail(email)) {
+        successP.textContent = "Vänligen skriv en giltig e-postadress.";
+        successP.style.color = "red";
+        return;
+    }
     console.log(name, message);
     successP.textContent = "Tack för ditt meddelande!";
     successP.style.color = "green";
@@ -24,4 +28,9 @@ if (name === "" || message === "") {
     nameInput.value = "";
     // Tar bort meddelandet
     messageInput.value = "";
+
+    emailInput.value = "";
 });
+function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
