@@ -37,9 +37,23 @@ footer {
 }
 
 nav {
+      position: sticky;
+    top: 0;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+
+    background: rgb(253, 221, 81);
+    border-top: 10px solid rgb(199, 3, 3);
+    border-bottom: 10px solid rgb(199, 3, 3);
+
+    z-index: 1000;
     padding: 1rem;
+}
+header {
     text-align: center;
-    font-size: 2rem;
 }
 hr {
     height: 0.5rem;
