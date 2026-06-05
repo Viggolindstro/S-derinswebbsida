@@ -170,6 +170,7 @@ img {
     display: block;
     margin: 1rem auto;
     max-width: 240px;
+    max-height: 240px;
     height: auto;
     width: 100%;
     border-radius: 20px;
@@ -243,7 +244,16 @@ button {
         height: 50px;
         font-size: 1.5rem;
     }
-  }
+     main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+        max-width: 320px;
+    }
+}
 
   body, h1, p, a, hr {
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -254,4 +264,28 @@ button {
   }
   a:hover {
     opacity: 0.8;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 2rem;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background: rgba(0,0,0,0.05);
+    flex: 0 1 200px;
+    max-width: 220px;
+
+    padding: 1rem;
+    border-radius: 12px;
+}
+html, body {
+    overflow-x: hidden;
 }
