@@ -4,11 +4,13 @@ const nameInput = document.querySelector("#name");
 const form = document.querySelector("#contactForm");
 const successP = document.querySelector("#success");
 const messageInput = document.querySelector("#message");
+const emailInput = document.querySelector("#email")
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
     const name = nameInput.value;
     const message = messageInput.value;
+    const email = emailInput.value;
 
     //Kollar så att alla fält är ifyllda, så att det inte skickas in tomma meddelanden.
 if (name === "" || message === "") {
