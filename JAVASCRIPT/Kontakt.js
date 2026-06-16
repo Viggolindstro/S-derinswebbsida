@@ -30,7 +30,7 @@ if (name === "" || message === "") {
     nameInput.value = "";
     // Tar bort meddelandet
     messageInput.value = "";
-
+    // Tar bort email
     emailInput.value = "";
 });
 function isValidEmail(email) {

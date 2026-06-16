@@ -21,6 +21,17 @@ function updateIngredientList() {
     });
 }
 
+function updateTotal(amount) {
+    total+= amount;
+
+    if (total < 0) {
+        total = 0;
+    }
+
+    totalText.textContent = total;
+    updateOrderButton();
+}
+
 document.querySelectorAll(".plus, .minus").forEach(button => {
     //Kollar vilken knapp som klickats på, och uppdaterar totalen baserat på det.
     button.addEventListener("click", () => {
@@ -30,17 +41,16 @@ document.querySelectorAll(".plus, .minus").forEach(button => {
 
         if(isPlus) {
             ingredients.push(name);
-            total+= price;
+            updateTotal(price);
         } else {
             const index = ingredients.indexOf(name);
 
             if (index!== -1) {
                 ingredients.splice(index, 1);
-                total -= price;
+                updateTotal(-price);
             }
         }
 
-        totalText.textContent = total;
         updateIngredientList();
         updateOrderButton();
     });
