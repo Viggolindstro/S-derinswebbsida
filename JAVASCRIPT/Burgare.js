@@ -1,4 +1,7 @@
 let total = 0;
+let ingredients = [];
+
+const ingredientList = document.querySelector("#ingredient-list");
 // Sätter total till 0 från början för att undvika att gammalt värde finns kvar.
 const plusButtons = document.querySelectorAll(".plus");
 const minusButtons = document.querySelectorAll(".minus");
@@ -14,13 +17,38 @@ function updateTotal(amount) {
     updateOrderButton();
 }
 
+function updateIngredientList() {
+    ingredientList.innerHTML = "";
+
+    ingredients.forEach(ingredient => {
+        const li = document.createElement("li")
+        li.textContent = ingredient;
+        ingredientList.appendChild(li);
+    });
+}
+
 document.querySelectorAll(".plus, .minus").forEach(button => {
     //Kollar vilken knapp som klickats på, och uppdaterar totalen baserat på det.
     button.addEventListener("click", () => {
         const price = Number(button.dataset.price);
         const isPlus = button.classList.contains("plus");
+        const name = button.dataset.name;
 
-        updateTotal(isPlus ? price : -price);
+        if(isPlus) {
+            ingredients.push(name);
+            total+= price;
+        } else {
+            const index = ingredients.indexOf(name);
+
+            if (index!== -1) {
+                ingredients.splice(index, 1);
+                total -= price;
+            }
+        }
+
+        totalText.textContent = total;
+        updateIngredientList();
+        updateOrderButton();
     });
 });
 const orderButton = document.querySelector(".orderbutton");

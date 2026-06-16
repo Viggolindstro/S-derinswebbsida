@@ -137,7 +137,7 @@ transform: scale(1.1);
 h2 {
     text-align: center;
     font-size: 3rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .minus {
@@ -301,4 +301,13 @@ html, body {
 }
 body, nav, .form-wrapper, input, textarea {
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+#ingredient-list {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    width: 300px;
+    min-height: 100px;
+    border: 2px solid rgb(199, 3, 3);
+    border-radius: 12px;
 }
