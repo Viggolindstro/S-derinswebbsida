@@ -4,8 +4,6 @@ let ingredients = [];
 
 //Hämtar element från HTML
 const ingredientList = document.querySelector("#ingredient-list");
-const plusButtons = document.querySelectorAll(".plus");
-const minusButtons = document.querySelectorAll(".minus");
 const totalText = document.querySelector("#total");
 
 function updateIngredientList() {
@@ -67,7 +65,8 @@ orderButton.addEventListener("click", () => {
 
     // Rensar all text
     totalText.textContent = total;
-    ingredientList.innerHTML = "";
+    updateIngredientList();
+    updateOrderButton();
 
     //Tar bort meddelandet "Din beställning är på väg!" efter tre sekunder
     setTimeout(() => {
