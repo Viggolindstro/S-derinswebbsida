@@ -1,28 +1,22 @@
+// Sätter total och ingredienser till 0 från början för att undvika att gammalt värde finns kvar.
 let total = 0;
 let ingredients = [];
 
+//Hämtar element från HTML
 const ingredientList = document.querySelector("#ingredient-list");
-// Sätter total till 0 från början för att undvika att gammalt värde finns kvar.
 const plusButtons = document.querySelectorAll(".plus");
 const minusButtons = document.querySelectorAll(".minus");
 const totalText = document.querySelector("#total");
 
-function updateTotal(amount) {
-    total += amount;
-    //Gör så att värdet aldrig kan gå under 0, så att det inte blir negativt.
-    if(total < 0) {
-        total = 0;
-    }
-    totalText.textContent = total;
-    updateOrderButton();
-}
-
 function updateIngredientList() {
+    //Gör listan tom från början
     ingredientList.innerHTML = "";
 
     ingredients.forEach(ingredient => {
+        // Skapar en li tagg med variablet ingredient inuti
         const li = document.createElement("li")
         li.textContent = ingredient;
+        //Lägger till li taggen i HTML
         ingredientList.appendChild(li);
     });
 }
@@ -56,11 +50,16 @@ const orderMessage = document.querySelector("#order-message");
 
 
 orderButton.addEventListener("click", () => {
-    if (total === 0) {
-        return;
-    }
     orderMessage.textContent = "Din beställning är på väg!";
+     // Rensar all data
+    total = 0;
+    ingredients = [];
 
+    // Rensar all text
+    totalText.textContent = total;
+    ingredientList.innerHTML = "";
+
+    //Tar bort meddelandet "Din beställning är på väg!" efter tre sekunder
     setTimeout(() => {
         orderMessage.textContent = "";
     }, 3000);
